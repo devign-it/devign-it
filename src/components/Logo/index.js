@@ -1,16 +1,16 @@
 import React from "react";
 import "./styles.scss";
 
-import logoFidesWhite from "../../assets/images/fides-logo_white.svg";
-import logoFidesRed from "../../assets/images/fides-logo_red.svg";
+import logoDevignWhite from "../../assets/images/devign-logo_horizontal_white.svg";
+import logoDevignBlack from "../../assets/images/devign-logo_horizontal.svg";
 
 const Logo = ({ height, color }) => {
-    let logoSource = logoFidesWhite || logoFidesRed;
+    let logoSource = logoDevignWhite || logoDevignBlack;
 
-    if (color === "red") {
-        logoSource = logoFidesRed;
+    if (color === "black") {
+        logoSource = logoDevignBlack;
     } else {
-        logoSource = logoFidesWhite;
+        logoSource = logoDevignWhite;
     }
     return (
         <div className="logo--wrapper">

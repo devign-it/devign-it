@@ -13,7 +13,12 @@ class Navigation extends React.Component {
                     <Logo />
                 </Link>
                 <div className="col__right">
-                    <DarkModeToggle />
+                    <div className="navigation--links">
+                        <NavigationItemNew text="Projects" to="/projects/" />
+                        <NavigationItemNew text="Services" to="/services/" />
+                        <NavigationItemNew text="About" to="/about/" />
+                    </div>
+                    {/* <DarkModeToggle /> */}
                 </div>
             </nav>
         );
